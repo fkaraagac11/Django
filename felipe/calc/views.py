@@ -6,8 +6,13 @@ from django.http import HttpResponse
 # def index(request):
 #     return HttpResponse("Hello, world. You're at the calc index.")
     
-def index(request,*args, **kwargs ):
-    return render(request, "about.html", {} )
+def index(request, *args, **kwargs ):
+    mycontext = {
+        "my_text": "This is my Django code",
+        "my_number": 11,
+        "my_day": "Friday"
+        }
+    return render(request, "about.html", mycontext )
 
 def detail(request, question_id):
     return HttpResponse("You're looking at question %s." % question_id)
