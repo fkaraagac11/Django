@@ -54,7 +54,8 @@ ROOT_URLCONF = 'felipe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': ["C:\\Users\\15713\\projects\\felipe\\templates\\"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
