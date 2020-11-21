@@ -16,6 +16,7 @@ def results(request, question_id):
     response = "You're looking at the results of question %s."
     return HttpResponse(response % question_id)
 
-def vote(request, question_id):
+def vote(request, *args, **kwargs):
     # return HttpResponse("You're voting on question %s." % question_id)
-    return HttpResponse("<h1>Hello World!</h1>")
+    # return HttpResponse("<h1>Hello World!</h1>")
+    return render(request, "vote.html", {} )
