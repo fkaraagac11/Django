@@ -20,3 +20,8 @@ def vote(request, *args, **kwargs):
     # return HttpResponse("You're voting on question %s." % question_id)
     # return HttpResponse("<h1>Hello World!</h1>")
     return render(request, "vote.html", {} )
+
+def fehmi(request, *args, **kwargs):
+    # return HttpResponse("You're voting on question %s." % question_id)
+    # return HttpResponse("<h1>Hello World!</h1>")
+    return render(request, "fehmi.html", {} )
