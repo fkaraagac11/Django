@@ -10,8 +10,10 @@ def index(request, *args, **kwargs ):
     mycontext = {
         "my_text": "This is my Django code",
         "my_number": 11,
-        "my_day": "Friday"
+        "my_day": "Friday",
+        "my_list": [111,222,333,444,555,666,777]
         }
+
     return render(request, "about.html", mycontext )
 
 def detail(request, question_id):

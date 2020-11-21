@@ -1,9 +1,7 @@
-
-
 {% block content %}
-<p>
+<h1>
     {{my_text}}
-</p>
+</h1>
 <p>
     {{my_number}}
 </p>
@@ -11,4 +9,14 @@
     {{my_day}}
 </p>
 <h1>This is about page</h1>
+<ul>{% for abc in my_list %}
+    {% if abc >= 333 %}
+        <h1>{{ forloop.counter}} --- {{abc}}</h1>
+    {% else %}
+    <h2>Hello Django World</h2>
+    {% endif %}
+        <h3>{{ forloop.counter}} --- {{abc}}</h3>
+    {% endfor %}
+</ul>
+
 {% endblock content %}
