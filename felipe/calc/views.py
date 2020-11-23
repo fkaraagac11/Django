@@ -1,10 +1,19 @@
 from django.shortcuts import render
+import requests  # API call icin => pip install requests yapildi 
+
 
 from django.http import HttpResponse
 
 
 # def index(request):
 #     return HttpResponse("Hello, world. You're at the calc index.")
+def api(request, *args, **kwargs):
+    response = requests.get("https://api.covid19api.com/countries").json
+    return render(request, "api.html", {"response":response} )
+
+def styles(request, *args, **kwargs):
+    return render(request, "style-try.html", {} )
+
     
 def index(request, *args, **kwargs ):
     mycontext = {
@@ -32,3 +41,4 @@ def fehmi(request, *args, **kwargs):
     # return HttpResponse("You're voting on question %s." % question_id)
     # return HttpResponse("<h1>Hello World!</h1>")
     return render(request, "fehmi.html", {} )
+

@@ -7,6 +7,8 @@ urlpatterns = [
     path('<int:question_id>/results/', views.results, name="results"),
     path('<int:question_id>/vote/', views.vote, name="vote"),
     path('fehmi/', views.fehmi, name="vote"),
+    path('api/', views.api, name="api"),
+    path('style/', views.styles, name="style"),
 ]
 
 

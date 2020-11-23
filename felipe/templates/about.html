@@ -1,3 +1,5 @@
+{% include "fehmi.html" %}
+
 {% block content %}
 <h1>
     {{my_text}}
@@ -12,11 +14,19 @@
 <ul>{% for abc in my_list %}
     {% if abc >= 333 %}
         <h1>{{ forloop.counter}} --- {{abc}}</h1>
+    {% elif abc <= 333 %}
+        <h1>{{ forloop.counter}} --- {{my_number}}</h1>
     {% else %}
     <h2>Hello Django World</h2>
+    
     {% endif %}
-        <h3>{{ forloop.counter}} --- {{abc}}</h3>
+
+        
     {% endfor %}
+    <h1>It is {% now "jS F Y H:i" %}</h1>
+    <h1>It is {% now "SHORT_DATETIME_FORMAT" %}</h1>
+    {% lorem 3 p %} 
+
 </ul>
 
 {% endblock content %}
