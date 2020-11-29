@@ -1,0 +1,71 @@
+<!-- ************************************ -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerClub</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}" /> -->
+
+</head>
+<body>
+   
+    <header>
+        <h1>Flower Club</h1>
+    </header>
+  
+    <section class="banner">
+        <img src="../static/images/lale8.png" alt="lale resmi">
+        <!-- <img src="./images/lale8.png" alt="lale resmi"> -->
+    </section>
+  
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#" class="join">Join the Flower Club</a></li>
+            <li><a href="#">Design News</a></li>
+            <li><a href="#">Trend Desings</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Hi, we are Flower Funs </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit delectus autem beatae molestias dolores. Voluptas, quia magni assumenda enim, nesciunt unde temporibus sed id voluptatibus, rerum impedit velit iste. Magnam!</p>
+        </article>
+        <ul class="images">
+            <li><img src="../static/images/gul.jpg" width=400px height=400px alt="gul resmi"></li>
+            <li><img src="../static/images/orkide.jpg" width=400px height=400px alt="orkide resmi"></li>
+            <li><img src="../static/images/lale.jpg" width=400px height=400px alt="lale resmi"></li>
+            
+    </main>
+
+    <section class="join">
+        <h2>Join Today!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptas pariatur totam id quibusdam cupiditate, ex maiores quos quisquam officiis.</p>
+        <form action="xxxx">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+ 
+    <footer>
+        <p class="copyright"><sup>2020 FlowerClub<sup>&#169</sup></p>
+    </footer>
+   
+</body>
+<script>
+    var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+</script>
+</html>

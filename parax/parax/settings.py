@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # ********************************************
     'webapp'
 ]
 
@@ -55,6 +56,7 @@ ROOT_URLCONF = 'parax.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # ***************************************************************
         # 'DIRS': [os.path.join(BASE_DIR, "templates")],
         'DIRS': ["C:\\Users\\15713\\projects\\parax\\templates\\"],
         'APP_DIRS': True,
